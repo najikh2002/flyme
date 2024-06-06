@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const lyricsContainer = document.getElementById("lyrics");
     let lyrics = [];
 
-    fetch("https://cdn.jsdelivr.net/gh/najikh2002/flyme/lyrics.json")
+    // fetch("https://cdn.jsdelivr.net/gh/najikh2002/flyme/lyrics.json")
+    fetch("lyrics.json")
       .then((response) => response.json())
       .then((data) => {
         lyrics = data;
