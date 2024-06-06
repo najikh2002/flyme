@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playBtn.addEventListener('click', () => {
         audio.play();
-        playBtn.style.display = 'none'; // Hide play button after play
+        playBtn.style.display = 'none'; 
     });
 
     audio.addEventListener("timeupdate", () => {
@@ -32,5 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
       if (currentLyric) {
         lyricsContainer.textContent = currentLyric.text;
       }
+    });
+
+    audio.addEventListener('ended', () => {
+        audio.currentTime = 0; 
+        playBtn.style.display = 'block'; 
     });
   });
