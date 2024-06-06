@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: hidden;
+}
+body {
+  background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3U2M3pxc2F2NnZpZ28wMWtxYmlyOHV1Y2ozOTkwNWs0MWQ4MWZiNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BRrBJnnsiRPjrFK/giphy.gif");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+hr {
+  border-color: #009dbc;
+  width: 100%;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Moon Dance", cursive;
+  font-size: 42px;
+  padding: 0 20px 20px 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  height: fit-content;
+}
+.audio-container {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.lyrics {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
