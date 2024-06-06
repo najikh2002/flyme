@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const audio = document.getElementById("audio");
+    const playBtn = document.getElementById("playButton");
     const lyricsContainer = document.getElementById("lyrics");
     let lyrics = [];
+    const audio = new Audio("fmttm.mp3");
 
     // fetch("https://cdn.jsdelivr.net/gh/najikh2002/flyme/lyrics.json")
     fetch("lyrics.json")
@@ -14,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error loading lyrics:", error);
         lyricsContainer.textContent = "Failed to load lyrics";
       });
+
+    playBtn.addEventListener('click', () => {
+        audio.play();
+        playBtn.style.display = 'none'; // Hide play button after play
+    });
 
     audio.addEventListener("timeupdate", () => {
       const currentTime = audio.currentTime;
